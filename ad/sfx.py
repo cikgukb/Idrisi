@@ -67,20 +67,20 @@ def at(sec, s, g=1.0):
 at(0.0, riser(0.6), 0.9); at(0.15, whoosh(0.5), 0.7)
 at(0.95, pop(480), 0.8); at(1.25, pop(560), 0.8)
 # tamara
-at(3.35, whoosh(0.5), 0.8); at(3.7, sparkle(1.3), 1.0); at(5.4, pop(700, 0.1), 0.5)
-at(7.6, whoosh(0.45, up=False), 0.6); at(8.1, pop(620), 0.7); at(8.5, pop(700), 0.7)
+at(2.95, whoosh(0.5), 0.8); at(3.3, sparkle(1.3), 1.0); at(5.0, pop(700, 0.1), 0.5)
+at(8.0, whoosh(0.45, up=False), 0.6); at(8.5, pop(620), 0.7); at(10.4, pop(700), 0.7)
 # satunjang
-at(10.15, whoosh(0.5), 0.8); at(10.5, sparkle(1.0), 0.6)
-for i in range(3): at(13.0 + i * 0.35, pop(520 + i * 120, 0.12), 0.6)
-at(15.2, pop(640), 0.6)
+at(12.15, whoosh(0.5), 0.8); at(12.5, sparkle(1.0), 0.6)
+for i in range(3): at(15.0 + i * 0.35, pop(520 + i * 120, 0.12), 0.6)
+at(17.6, pop(640), 0.6)
 # dose
-at(16.95, whoosh(0.5), 0.8); at(17.2, pop(500), 0.7); at(17.4, pop(600), 0.7)
-for i in range(5): at(18.0 + i * 0.2, tick(1500 + i * 150), 0.8)
-at(19.0, ding(1318.5, 1.2), 0.9); at(19.4, pop(760, 0.1), 0.5)
+at(18.75, whoosh(0.5), 0.8); at(19.0, pop(500), 0.7); at(19.2, pop(600), 0.7)
+for i in range(5): at(19.8 + i * 0.2, tick(1500 + i * 150), 0.8)
+at(20.8, ding(1318.5, 1.2), 0.9); at(22.4, pop(760, 0.1), 0.5)
 # cta
-at(21.35, whoosh(0.5), 0.8); at(21.6, pop(440, 0.18), 0.9); at(22.8, pop(600, 0.16), 0.9)
-for i in range(len("cikgukb.github.io/idrisi")): at(23.4 + i * 1.4 / 24, key_click(), 0.9)
-at(25.0, chime(), 0.9)
+at(23.05, whoosh(0.5), 0.8); at(23.3, pop(440, 0.18), 0.9); at(24.5, pop(600, 0.16), 0.9)
+for i in range(len("cikgukb.github.io/idrisi")): at(25.1 + i * 1.4 / 24, key_click(), 0.9)
+at(26.6, chime(), 0.9)
 
 # ---- muzik latar: groove ringkas 104 BPM (kick, hat, bass, pad) ----
 bpm = 104; beat = 60 / bpm; bed = np.zeros(N)

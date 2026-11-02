@@ -21,18 +21,21 @@ GOLD, GOLD2, AMBER, CREAM, RED = (216, 166, 74), (240, 201, 119), (217, 133, 59)
 BG = (13, 11, 9)
 
 # ---------- timeline (saat). Laras ikut timings.py selepas ada vo.mp3 ----------
-S = dict(hook=0.0, tamara=3.6, satunjang=10.4, dose=17.2, cta=21.6)
-CAPS = [  # (mula, tamat, teks)
-    (0.2, 3.5, "Korang! Ni dua botol yang SAYA minum setiap hari."),
-    (3.7, 5.6, "Yang pertama, TAMARA."),
-    (5.6, 8.2, "Ekstrak kurma Ajwa, ditapai secara semula jadi."),
-    (8.2, 10.3, "100% kurma Ajwa. Tanpa pengawet, tanpa bahan tambahan."),
-    (10.5, 12.3, "Yang kedua, SATUNJANG."),
-    (12.3, 15.2, "Minuman botani kurma merah, dang gui & dang shen."),
-    (15.2, 17.1, "Khas untuk lelaki dewasa."),
-    (17.3, 21.4, "Cukup 10–15ml setiap kali minum. Senang je!"),
-    (21.7, 24.4, "Nak cuba? Layari website IDRISI sekarang."),
-    (24.4, 27.4, "Link ada kat bawah!"),
+S = dict(hook=0.0, tamara=3.2, satunjang=12.4, dose=19.0, cta=23.3)
+CAPS = [  # (mula, tamat, teks) — diselaraskan dengan vo.mp3 (+0.2s delay)
+    (0.1, 3.1, "Korang! Ni dua botol yang SAYA minum setiap hari."),
+    (3.4, 4.9, "Yang pertama, TAMARA."),
+    (5.2, 8.3, "Ekstrak kurma Ajwa, ditapai secara semula jadi."),
+    (8.5, 10.3, "100% kurma Ajwa."),
+    (10.4, 12.5, "Tanpa pengawet, tanpa bahan tambahan."),
+    (12.7, 14.4, "Yang kedua, SATUNJANG."),
+    (14.5, 17.5, "Minuman botani kurma merah, dang gui & dang shen."),
+    (17.6, 19.2, "Khas untuk lelaki dewasa."),
+    (19.4, 22.4, "Cukup 10–15ml setiap kali minum."),
+    (22.4, 23.4, "Senang je!"),
+    (23.6, 24.2, "Nak cuba?"),
+    (24.3, 26.1, "Layari website IDRISI sekarang."),
+    (26.3, 28.6, "Link ada kat bawah!"),
 ]
 URL = "cikgukb.github.io/idrisi"
 
@@ -155,17 +158,17 @@ def scene_tamara(f, t):
     lt = t - S["tamara"]
     ring(f, W / 2, 900, 470, GOLD, lt * 0.9 - 1.5, ease_out(prog(lt, 0, 0.6)))
     p = ease_out(prog(lt, 0, 0.8))
-    if lt < 4.2:
+    if lt < 5.0:
         paste(f, tam_big, W / 2, 990 + (1 - p) * 300 + math.sin(t * 2) * 10, scale=0.85 + 0.15 * p, alpha=p)
     else:  # flip to label/back
-        q = ease_out(prog(lt, 4.2, 0.6))
+        q = ease_out(prog(lt, 5.0, 0.6))
         paste(f, tam_big, W / 2 - q * 520, 920, alpha=1 - q)
         paste(f, tam_back, W / 2 + (1 - q) * 520, 900 + math.sin(t * 2) * 10, alpha=q, scale=1.15)
     a = ease_out(prog(lt, 0.2, 0.5))
     text_c(d, (W / 2, 180), "KHALL AJWA", F("SemiBold", 36), GOLD + (int(255 * a),))
     text_c(d, (W / 2, 280 - (1 - a) * 30), "TAMARA", ImageFont.truetype(SERIF, 140), GOLD2 + (int(255 * a),))
-    chip(f, 280, 1420, "100% Kurma Ajwa", GOLD2, prog(lt, 4.5, 0.5))
-    chip(f, 800, 1420, "Tanpa Pengawet", GOLD2, prog(lt, 4.9, 0.5))
+    chip(f, 280, 1420, "100% Kurma Ajwa", GOLD2, prog(lt, 5.3, 0.5))
+    chip(f, 800, 1420, "Tanpa Pengawet", GOLD2, prog(lt, 7.2, 0.5))
     chip(f, W / 2, 400, "Pure Fermented Ajwa Extract", GOLD, prog(lt, 1.8, 0.5))
 
 def scene_satunjang(f, t):
@@ -193,7 +196,7 @@ def scene_satunjang(f, t):
     a = ease_out(prog(lt, 0.2, 0.5))
     text_c(d, (W / 2, 180), "MINUMAN BOTANI", F("SemiBold", 36), AMBER + (int(255 * a),))
     text_c(d, (W / 2, 280 - (1 - a) * 30), "SATUNJANG", ImageFont.truetype(SERIF, 118), (242, 176, 108, int(255 * a)))
-    chip(f, W / 2, 1420, "Khas lelaki dewasa · MeSTI · GMP", (242, 176, 108), prog(lt, 4.8, 0.5))
+    chip(f, W / 2, 1420, "Khas lelaki dewasa · MeSTI · GMP", (242, 176, 108), prog(lt, 5.2, 0.5))
 
 def scene_dose(f, t):
     f.alpha_composite(BG_MIX); d = ImageDraw.Draw(f)
@@ -204,7 +207,7 @@ def scene_dose(f, t):
     n = 10 + round(5 * ease_out(prog(lt, 0.8, 1.0)))
     text_c(d, (W / 2, 300), f"10–{n}ml", F("ExtraBold", 170), GOLD2 + (int(255 * a),))
     text_c(d, (W / 2, 450), "setiap kali minum", F("Medium", 52), CREAM + (int(255 * a),))
-    chip(f, W / 2, 560, "Senang je! ✓".replace("✓", ""), GOLD2, prog(lt, 2.2, 0.5))
+    chip(f, W / 2, 560, "Senang je! ✓".replace("✓", ""), GOLD2, prog(lt, 3.4, 0.5))
 
 def scene_cta(f, t):
     f.alpha_composite(BG_GOLD); d = ImageDraw.Draw(f)
@@ -225,7 +228,7 @@ def scene_cta(f, t):
         dl.text((450, 185), URL[:k] + cur, font=F("SemiBold", 46), fill=GOLD2 + (255,), anchor="mm")
         paste(f, L, W / 2, 1335, scale=bp)
     # pulse arrow after typing
-    if lt > 4.0:
+    if lt > 3.0:
         y = 1460 + math.sin(t * 6) * 10
         text_c(d, (W / 2, y), "link kat bawah", F("SemiBold", 40), CREAM + (230,))
 
