@@ -1,10 +1,12 @@
 # IDRISI — Laman Produk
 
-Laman portfolio interaktif (scroll) untuk **Tamara Khall Ajwa** & **Satunjang**.
+Laman produk gaya poster untuk **Tamara Khall Ajwa** & **Satunjang**: kad krim atas latar coklat kurma & hijau sage, tajuk condensed gergasi, tepi kertas koyak, botol atas podium, padanan keperluan → produk, dan set lengkap.
 
 - `index.html` — laman utama
 - `assets/img/` — gambar produk (latar dibuang)
-- `assets/app.js` — **isi pautan jualan dalam objek `LINKS`** (WhatsApp, Shopee, TikTok, Lazada)
+- `assets/app.js` — **isi pautan jualan dalam objek `LINKS`** (WhatsApp, Shopee, TikTok, Lazada); juga penukar pandangan botol & padanan tag
+- `assets/style.css` — token warna & fon di bahagian `:root`
+- `assets/ad/presenter.png` — gambar presenter dalam hero
 
 ## Deploy
 GitHub Pages via `.github/workflows/pages.yml` (auto bila push ke `main`).
