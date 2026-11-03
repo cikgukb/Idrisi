@@ -2,14 +2,16 @@
    PAUTAN JUALAN — isi kemudian (WhatsApp, Shopee, TikTok…)
    Biarkan "" untuk sembunyikan butang.
    ========================================================= */
+const WA = "60184066544";
+const wa = produk => `https://wa.me/${WA}?text=${encodeURIComponent("Saya berminat untuk dapatkan produk " + produk)}`;
 const LINKS = {
-  whatsapp: "",   // cth: "https://wa.me/60123456789?text=Saya%20nak%20order%20IDRISI"
+  whatsapp: wa("Tamara / Satunjang"),
   shopee:   "",   // cth: "https://shopee.com.my/..."
   tiktok:   "",   // cth: "https://www.tiktok.com/@..."
   lazada:   "",
-  // Pautan khusus untuk butang "Beli Tamara" / "Beli Satunjang" (pilihan)
-  tamara:    "",
-  satunjang: ""
+  // Pautan khusus untuk butang "Beli Tamara" / "Beli Satunjang"
+  tamara:    wa("Tamara"),
+  satunjang: wa("Satunjang")
 };
 
 (() => {
