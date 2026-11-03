@@ -5,210 +5,250 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>IDRISI — Tamara &amp; Satunjang</title>
 <meta name="description" content="IDRISI: Tamara Khall Ajwa (ekstrak Ajwa terfermentasi) dan Satunjang (minuman botani kurma merah, dang gui &amp; dang shen).">
-<meta name="theme-color" content="#0d0b09">
+<meta name="theme-color" content="#2a1410">
 <meta property="og:title" content="IDRISI — Tamara &amp; Satunjang">
 <meta property="og:description" content="Ekstrak kurma terfermentasi & minuman botani dari IDRISI.">
 <meta property="og:image" content="assets/img/tamara-front.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="tear" viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <path d="M0 40 V18 L28 24 L52 10 L80 22 L110 8 L138 20 L166 6 L190 18 L224 12 L250 24 L282 9 L306 21 L336 14 L362 26 L394 10 L420 20 L450 7 L476 19 L506 12 L530 25 L562 11 L590 22 L618 9 L648 20 L676 13 L704 25 L734 10 L758 21 L788 8 L814 19 L846 12 L872 24 L902 10 L930 22 L958 7 L986 18 L1016 12 L1044 25 L1074 11 L1100 21 L1130 9 L1160 20 L1200 14 V40 Z"/>
+    </symbol>
+  </defs>
+</svg>
 
-<header class="nav">
-  <a href="#top" class="brand"><span class="brand-badge">IDRISI</span></a>
-  <nav class="nav-links">
-    <a href="#tamara">Tamara</a>
-    <a href="#satunjang">Satunjang</a>
-    <a href="#banding">Banding</a>
-    <a href="#hubungi" class="nav-cta">Beli</a>
+<div class="ground">
+<main class="poster" id="top">
+
+  <!-- NAV -->
+  <nav class="nav gutter" aria-label="Utama">
+    <div class="inner">
+      <a href="#tentang">Tentang</a>
+      <span class="rule" aria-hidden="true"></span>
+      <a href="#top" class="brand" aria-label="IDRISI, laman utama"><span class="brand-badge">IDRISI</span></a>
+      <span class="rule" aria-hidden="true"></span>
+      <a href="#hubungi" class="nav-buy" data-buy="whatsapp">Beli</a>
+    </div>
   </nav>
-</header>
-
-<main id="top">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-text">
-      <p class="eyebrow reveal">Bio Tech Era Global · Perak</p>
-      <h1 class="reveal">Kebaikan kurma,<br><em>dalam setiap titis.</em></h1>
-      <p class="lead reveal">Dua minuman kesihatan IDRISI — diperbuat daripada kurma dan herba semula jadi.</p>
-      <div class="hero-actions reveal">
-        <a href="#tamara" class="btn">Terokai produk</a>
-        <a href="#hubungi" class="btn btn-ghost">Dapatkan sekarang</a>
+  <section class="hero gutter" id="tentang">
+    <span class="doodle d1"></span><span class="doodle d2"></span><span class="doodle d3"></span>
+    <span class="doodle d4"></span><span class="doodle d5"></span><span class="doodle d6"></span>
+    <span class="doodle d7"></span><span class="doodle d8"></span><span class="doodle d9"></span>
+    <div class="inner">
+      <h1 class="headline">
+        <span class="l1">Kebaikan</span>
+        <span class="l2">Kurma Dalam</span>
+        <span class="l3">Setiap Titis</span>
+      </h1>
+      <div class="hero-row">
+        <p class="lede">Dua minuman kesihatan IDRISI, dibuat daripada kurma dan herba semula jadi. <strong>Tanpa pengawet, tanpa bahan tambahan.</strong> Diedarkan oleh Bio Tech Era Global, Ulu Kinta, Perak.</p>
+        <figure class="photo">
+          <div class="photo-bg" aria-hidden="true"></div>
+          <img src="assets/ad/presenter.png" alt="Cikgu KB mempersembahkan produk IDRISI" width="648" height="1021">
+        </figure>
       </div>
     </div>
-    <div class="hero-bottles" id="hero-bottles">
-      <img src="assets/img/satunjang-front.webp" alt="Botol Satunjang 325ml" class="hb hb-back" width="782" height="2384">
-      <img src="assets/img/tamara-front.webp" alt="Botol Tamara 250ml" class="hb hb-front" width="520" height="2386">
-    </div>
-    <div class="scroll-hint" aria-hidden="true"><span></span>Skrol</div>
   </section>
 
-  <!-- TAMARA SCROLL STORY -->
-  <section class="story theme-tamara" id="tamara" data-story>
-    <div class="story-sticky">
-      <div class="story-stage">
-        <div class="stage-ring"></div>
-        <img src="assets/img/tamara-front.webp" alt="Tamara — depan" class="stage-img is-active" data-step-img="0" width="520" height="2386">
-        <img src="assets/img/tamara-story.webp" alt="Tamara — keterangan produk" class="stage-img" data-step-img="1" width="533" height="2388" loading="lazy">
-        <img src="assets/img/tamara-info.webp" alt="Tamara — ramuan &amp; nutrisi" class="stage-img" data-step-img="2" width="538" height="2390" loading="lazy">
-      </div>
-      <div class="story-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
-    </div>
+  <!-- SHELF -->
+  <section class="shelf gutter" aria-label="Produk IDRISI">
+    <div class="inner">
 
-    <div class="story-steps">
-      <article class="step" data-step="0"><div class="step-inner">
+      <div class="stand theme-tamara" id="tamara" data-product="tamara">
+        <div class="bottle-wrap">
+          <img class="bottle is-active" src="assets/img/tamara-front.webp" alt="Botol Tamara 250ml, depan" width="520" height="2386" data-view="0">
+          <img class="bottle" src="assets/img/tamara-story.webp" alt="Tamara, keterangan produk" width="533" height="2388" data-view="1" loading="lazy">
+          <img class="bottle" src="assets/img/tamara-info.webp" alt="Tamara, ramuan dan nutrisi" width="538" height="2390" data-view="2" loading="lazy">
+        </div>
+        <div class="podium"></div>
+        <div class="views" role="tablist" aria-label="Pandangan botol Tamara">
+          <button type="button" role="tab" aria-selected="true" data-view="0">Depan</button>
+          <button type="button" role="tab" aria-selected="false" data-view="1">Kisah</button>
+          <button type="button" role="tab" aria-selected="false" data-view="2">Ramuan</button>
+        </div>
         <p class="eyebrow">Khall Ajwa · 250ml</p>
-        <h2>TAMARA</h2>
-        <p class="sub">Pure Fermented Ajwa Extract</p>
-        <p>Ekstrak kurma Ajwa yang ditapai melalui proses penapaian probiotik terkawal. Dibuat daripada <strong>100% kurma Ajwa asli</strong>.</p>
+        <h2 class="pname">Tamara</h2>
+        <p class="psub">Pure Fermented Ajwa Extract</p>
+        <p class="ptext">Ekstrak kurma Ajwa yang ditapai melalui penapaian probiotik terkawal. <strong>100% kurma Ajwa asli</strong>, satu ramuan sahaja.</p>
         <ul class="chips"><li>100% Kurma Ajwa</li><li>Tanpa bahan tambahan</li><li>Tanpa pengawet</li></ul>
-      </div></article>
-      <article class="step" data-step="1"><div class="step-inner">
-        <p class="eyebrow">Proses</p>
-        <h3>Penapaian probiotik terkawal</h3>
-        <p>Mengekalkan keaslian kurma Ajwa sambil membuka kekayaan bioaktifnya — enzim semula jadi, asid organik dan hasil sampingan bakteria bermanfaat.</p>
-        <div class="benefits">
-          <div><span>🌿</span>Imbangi penghadaman</div>
-          <div><span>🛡️</span>Tingkatkan imuniti</div>
-          <div><span>⚡</span>Sokong kecergasan harian</div>
-        </div>
-      </div></article>
-      <article class="step" data-step="2"><div class="step-inner">
-        <p class="eyebrow">Ramuan &amp; penggunaan</p>
-        <h3>Satu ramuan sahaja: Kurma Ajwa.</h3>
-        <dl class="facts">
-          <div><dt>Sukatan</dt><dd>10–15ml setiap kali</dd></div>
-          <div><dt>Sesuai</dt><dd>Dewasa &amp; kanak-kanak 7 tahun ke atas</dd></div>
-          <div><dt>Simpan</dt><dd>Tempat sejuk &amp; kering</dd></div>
-        </dl>
-        <div class="nutri">
-          <p class="nutri-title">Nutrisi setiap hidangan (10ml)</p>
-          <div class="nutri-grid">
-            <div><b data-count="11.8">0</b><small>kcal</small></div>
-            <div><b data-count="2.5">0</b><small>g karbohidrat</small></div>
-            <div><b data-count="2.0">0</b><small>g gula</small></div>
-            <div><b data-count="0">0</b><small>g lemak</small></div>
-          </div>
-        </div>
-      </div></article>
-    </div>
-  </section>
-
-  <!-- QUOTE BREAK -->
-  <section class="quote">
-    <p class="reveal">“Ekstrak kebaikan semula jadi, diperkaya dengan ketelitian saintifik untuk kesihatan menyeluruh.”</p>
-  </section>
-
-  <!-- SATUNJANG SCROLL STORY -->
-  <section class="story theme-satunjang" id="satunjang" data-story>
-    <div class="story-sticky">
-      <div class="story-stage">
-        <div class="stage-ring"></div>
-        <img src="assets/img/satunjang-front.webp" alt="Satunjang — depan" class="stage-img is-active" data-step-img="0" width="782" height="2384" loading="lazy">
-        <img src="assets/img/satunjang-info.webp" alt="Satunjang — ramuan &amp; nutrisi" class="stage-img" data-step-img="1" width="786" height="2386" loading="lazy">
-        <img src="assets/img/satunjang-back.webp" alt="Satunjang — pengedar &amp; pengilang" class="stage-img" data-step-img="2" width="776" height="2384" loading="lazy">
+        <a href="#hubungi" class="buy" data-buy="tamara"><span class="plus">+</span> Beli Tamara</a>
       </div>
-      <div class="story-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
-    </div>
 
-    <div class="story-steps">
-      <article class="step" data-step="0"><div class="step-inner">
-        <p class="eyebrow">Minuman Botani · 325ml</p>
-        <h2>SATUNJANG</h2>
-        <p class="sub">Kurma Merah, Dang Gui &amp; Dang Shen</p>
-        <p>Gabungan cuka kurma dan herba tradisional pilihan dalam satu botol. Berdaftar <strong>MeSTI</strong> dan dihasilkan di kilang <strong>GMP</strong>.</p>
-        <ul class="chips"><li>100% Herba semula jadi</li><li>MeSTI</li><li>GMP</li></ul>
-      </div></article>
-      <article class="step" data-step="1"><div class="step-inner">
-        <p class="eyebrow">Ramuan</p>
-        <h3>Herba yang dipilih rapi</h3>
-        <div class="bars">
-          <div class="bar"><span>Kurma merah</span><i style="--w:35%"></i><b>35%</b></div>
-          <div class="bar"><span>Dang Shen</span><i style="--w:12%"></i><b>12%</b></div>
-          <div class="bar"><span>Dang Gui</span><i style="--w:10%"></i><b>10%</b></div>
+      <div class="stand theme-satunjang" id="satunjang" data-product="satunjang">
+        <div class="bottle-wrap">
+          <img class="bottle is-active" src="assets/img/satunjang-front.webp" alt="Botol Satunjang 325ml, depan" width="782" height="2384" data-view="0">
+          <img class="bottle" src="assets/img/satunjang-info.webp" alt="Satunjang, ramuan dan nutrisi" width="786" height="2386" data-view="1" loading="lazy">
+          <img class="bottle" src="assets/img/satunjang-back.webp" alt="Satunjang, pengedar dan pengilang" width="776" height="2384" data-view="2" loading="lazy">
         </div>
-        <p class="small">Bersama cuka kurma, Bei Qi &amp; kulit kayu manis.</p>
-      </div></article>
-      <article class="step" data-step="2"><div class="step-inner">
-        <p class="eyebrow">Penggunaan</p>
-        <h3>Minum 10–15ml setiap kali.</h3>
-        <dl class="facts">
-          <div><dt>Sesuai</dt><dd>Golongan lelaki dewasa</dd></div>
-          <div><dt>Simpan</dt><dd>Tempat sejuk &amp; kering</dd></div>
-          <div><dt>Hidangan</dt><dd>32 hidangan sebotol</dd></div>
-        </dl>
-        <div class="nutri">
-          <p class="nutri-title">Nutrisi setiap hidangan (10ml)</p>
-          <div class="nutri-grid">
-            <div><b data-count="8">0</b><small>kcal</small></div>
-            <div><b data-count="1.9">0</b><small>g karbohidrat</small></div>
-            <div><b data-count="1.7">0</b><small>g gula</small></div>
-            <div><b data-count="0">0</b><small>g lemak</small></div>
+        <div class="podium"></div>
+        <div class="views" role="tablist" aria-label="Pandangan botol Satunjang">
+          <button type="button" role="tab" aria-selected="true" data-view="0">Depan</button>
+          <button type="button" role="tab" aria-selected="false" data-view="1">Ramuan</button>
+          <button type="button" role="tab" aria-selected="false" data-view="2">Belakang</button>
+        </div>
+        <p class="eyebrow">Minuman Botani · 325ml</p>
+        <h2 class="pname">Satunjang</h2>
+        <p class="psub">Kurma Merah, Dang Gui &amp; Dang Shen</p>
+        <p class="ptext">Gabungan cuka kurma dan herba tradisional pilihan dalam satu botol. Berdaftar <strong>MeSTI</strong>, dihasilkan di kilang <strong>GMP</strong>.</p>
+        <ul class="chips"><li>100% Herba semula jadi</li><li>MeSTI</li><li>GMP</li></ul>
+        <a href="#hubungi" class="buy" data-buy="satunjang"><span class="plus">+</span> Beli Satunjang</a>
+      </div>
+
+    </div>
+  </section>
+
+  <svg class="tear tear-sage" aria-hidden="true"><use href="#tear"/></svg>
+
+  <!-- PADANAN -->
+  <section class="match gutter" id="banding">
+    <div class="inner">
+      <h2 class="h2">Tak pasti yang mana sesuai untuk anda?</h2>
+      <p class="sub">Pilih keperluan anda. Kami padankan dengan botol yang betul.</p>
+      <ul class="tags" id="tags">
+        <li><button type="button" class="tag" data-tone="gold" data-product="tamara" aria-pressed="false">penghadaman</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">imuniti</button></li>
+        <li><button type="button" class="tag" data-tone="red" data-product="satunjang" aria-pressed="false">stamina</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">kecergasan</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">seisi keluarga</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">kanak-kanak 7+</button></li>
+        <li><button type="button" class="tag" data-tone="amber" data-product="satunjang" aria-pressed="false">lelaki dewasa</button></li>
+        <li><button type="button" class="tag" data-product="satunjang" aria-pressed="false">keletihan</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">probiotik</button></li>
+        <li><button type="button" class="tag" data-product="satunjang" aria-pressed="false">herba tradisional</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">kurma ajwa</button></li>
+        <li><button type="button" class="tag" data-product="satunjang" aria-pressed="false">peredaran darah</button></li>
+        <li><button type="button" class="tag" data-product="tamara" aria-pressed="false">tanpa pengawet</button></li>
+        <li><button type="button" class="tag" data-product="satunjang" aria-pressed="false">selepas kerja</button></li>
+      </ul>
+      <p class="pick" id="pick">Pilih satu keperluan di atas, atau tekan nama produk di bawah.</p>
+
+      <div class="match-body">
+        <div class="match-bottle">
+          <img src="assets/img/tamara-front.webp" alt="Tamara" width="520" height="2386" data-product="tamara" class="is-active" loading="lazy">
+          <img src="assets/img/satunjang-front.webp" alt="Satunjang" width="782" height="2384" data-product="satunjang" loading="lazy">
+        </div>
+
+        <div class="match-panels">
+          <div class="switch" role="tablist" aria-label="Produk">
+            <button type="button" role="tab" aria-selected="true" data-product="tamara">Tamara</button>
+            <button type="button" role="tab" aria-selected="false" data-product="satunjang">Satunjang</button>
+          </div>
+
+          <div class="panel theme-tamara is-active" data-product="tamara" role="tabpanel">
+            <h3>Tamara untuk <em>penghadaman, imuniti &amp; kecergasan harian</em></h3>
+            <p>Penapaian probiotik terkawal mengekalkan keaslian kurma Ajwa sambil membuka bioaktifnya: enzim semula jadi, asid organik dan hasil bakteria bermanfaat.</p>
+            <dl class="facts">
+              <div><dt>Sukatan</dt><dd>10–15ml setiap kali</dd></div>
+              <div><dt>Sesuai</dt><dd>Dewasa &amp; kanak-kanak 7 tahun ke atas</dd></div>
+              <div><dt>Hidangan</dt><dd>25 hidangan sebotol</dd></div>
+              <div><dt>Simpan</dt><dd>Tempat sejuk &amp; kering</dd></div>
+            </dl>
+            <div class="nutri">
+              <p class="nutri-title">Nutrisi setiap hidangan (10ml)</p>
+              <div class="nutri-grid">
+                <div><b>11.8</b><small>kcal</small></div>
+                <div><b>2.5</b><small>g karbohidrat</small></div>
+                <div><b>2.0</b><small>g gula</small></div>
+                <div><b>0</b><small>g lemak</small></div>
+              </div>
+            </div>
+            <a href="#hubungi" class="buy" data-buy="tamara"><span class="plus">+</span> Beli Tamara</a>
+          </div>
+
+          <div class="panel theme-satunjang" data-product="satunjang" role="tabpanel" hidden>
+            <h3>Satunjang untuk <em>stamina &amp; tenaga lelaki dewasa</em></h3>
+            <p>Cuka kurma bersama herba yang dipilih rapi: kurma merah, Dang Shen, Dang Gui, Bei Qi dan kulit kayu manis.</p>
+            <div class="bars">
+              <div class="bar"><span>Kurma merah</span><i style="--w:35%"></i><b>35%</b></div>
+              <div class="bar"><span>Dang Shen</span><i style="--w:12%"></i><b>12%</b></div>
+              <div class="bar"><span>Dang Gui</span><i style="--w:10%"></i><b>10%</b></div>
+            </div>
+            <dl class="facts">
+              <div><dt>Sukatan</dt><dd>10–15ml setiap kali</dd></div>
+              <div><dt>Sesuai</dt><dd>Golongan lelaki dewasa</dd></div>
+              <div><dt>Hidangan</dt><dd>32 hidangan sebotol</dd></div>
+              <div><dt>Simpan</dt><dd>Tempat sejuk &amp; kering</dd></div>
+            </dl>
+            <div class="nutri">
+              <p class="nutri-title">Nutrisi setiap hidangan (10ml)</p>
+              <div class="nutri-grid">
+                <div><b>8</b><small>kcal</small></div>
+                <div><b>1.9</b><small>g karbohidrat</small></div>
+                <div><b>1.7</b><small>g gula</small></div>
+                <div><b>0</b><small>g lemak</small></div>
+              </div>
+            </div>
+            <a href="#hubungi" class="buy" data-buy="satunjang"><span class="plus">+</span> Beli Satunjang</a>
           </div>
         </div>
-      </div></article>
+      </div>
     </div>
   </section>
 
-  <!-- COMPARE -->
-  <section class="compare" id="banding">
-    <h2 class="reveal">Pilih yang sesuai untuk anda</h2>
-    <div class="cards">
-      <article class="card theme-tamara reveal">
-        <img src="assets/img/tamara-front.webp" alt="Tamara" width="520" height="2386" loading="lazy">
-        <div>
-          <h3>Tamara</h3>
-          <p class="sub">Ekstrak Ajwa terfermentasi</p>
-          <ul>
-            <li>250ml · 25 hidangan</li>
-            <li>100% Kurma Ajwa</li>
-            <li>Dewasa &amp; kanak-kanak 7+</li>
-            <li>Tanpa pengawet</li>
-          </ul>
-          <a href="#hubungi" class="btn" data-buy="tamara">Beli Tamara</a>
-        </div>
-      </article>
-      <article class="card theme-satunjang reveal">
-        <img src="assets/img/satunjang-front.webp" alt="Satunjang" width="782" height="2384" loading="lazy">
-        <div>
-          <h3>Satunjang</h3>
-          <p class="sub">Minuman botani herba</p>
-          <ul>
-            <li>325ml · 32 hidangan</li>
-            <li>Kurma merah, Dang Gui, Dang Shen</li>
-            <li>Lelaki dewasa</li>
-            <li>MeSTI · GMP</li>
-          </ul>
-          <a href="#hubungi" class="btn" data-buy="satunjang">Beli Satunjang</a>
-        </div>
-      </article>
+  <svg class="tear tear-dark" aria-hidden="true"><use href="#tear"/></svg>
+
+  <!-- SET -->
+  <section class="set gutter" id="set">
+    <div class="inner">
+      <div class="set-text">
+        <div class="ghost" aria-hidden="true">2</div>
+        <h2 class="h2">Set Lengkap IDRISI</h2>
+        <p>Tamara untuk seisi keluarga, Satunjang untuk lelaki dewasa. Dapatkan kedua-duanya terus dari pengedar, dengan harga ejen untuk pembelian pukal.</p>
+        <a href="#hubungi" class="cta" data-buy="whatsapp">Tanya harga di WhatsApp</a>
+        <span class="note">Balasan pada waktu pejabat · Pos ke seluruh Malaysia</span>
+      </div>
+      <div class="crate" aria-hidden="true">
+        <div class="crate-box"></div>
+        <img src="assets/img/tamara-front.webp" alt="" width="520" height="2386" class="c1" loading="lazy">
+        <img src="assets/img/satunjang-front.webp" alt="" width="782" height="2384" class="c2" loading="lazy">
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="hubungi">
-    <h2 class="reveal">Dapatkan IDRISI</h2>
-    <p class="lead reveal">Hubungi kami untuk tempahan &amp; harga ejen.</p>
-    <div class="contact-actions reveal" id="contact-actions">
-      <!-- Butang diisi oleh assets/app.js (LINKS) -->
+  <svg class="tear tear-cream" aria-hidden="true"><use href="#tear"/></svg>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="foot gutter" id="hubungi">
+    <div class="inner">
+      <span class="brand-badge">IDRISI</span>
+      <ul class="links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#tamara">Tamara</a></li>
+        <li><a href="#satunjang">Satunjang</a></li>
+        <li><a href="#banding">Padanan</a></li>
+      </ul>
+      <ul class="links">
+        <li><a href="#set">Set lengkap</a></li>
+        <li><a href="#hubungi">Hubungi</a></li>
+      </ul>
+      <div class="get">
+        <h3>Dapatkan IDRISI</h3>
+        <p>Hubungi kami untuk tempahan &amp; harga ejen.</p>
+        <div class="contact-actions" id="contact-actions">
+          <!-- Butang diisi oleh assets/app.js (LINKS) -->
+        </div>
+      </div>
     </div>
-    <p class="addr reveal">
-      <strong>Diedarkan oleh:</strong> Bio Tech Era Global, Batu 7½, Jln Tambun, 31150 Ulu Kinta, Perak Darul Ridzuan.<br>
-      <strong>Dikilangkan oleh:</strong> Sidratul Corporation Sdn. Bhd., Kuala Kangsar, Perak.
-    </p>
-  </section>
+    <div class="inner foot-bottom">
+      <p class="addr">
+        <strong>Diedarkan oleh:</strong> Bio Tech Era Global, Batu 7½, Jln Tambun, 31150 Ulu Kinta, Perak Darul Ridzuan.<br>
+        <strong>Dikilangkan oleh:</strong> Sidratul Corporation Sdn. Bhd., Kuala Kangsar, Perak.
+      </p>
+      <p class="copy">© <span id="year"></span> Bio Tech Era Global. Produk ini bukan untuk mendiagnosis, merawat atau menyembuhkan sebarang penyakit.</p>
+    </div>
+  </footer>
+
 </main>
-
-<footer class="footer">
-  <span class="brand-badge">IDRISI</span>
-  <p>© <span id="year"></span> Bio Tech Era Global. Produk ini bukan untuk mendiagnosis, merawat atau menyembuhkan sebarang penyakit.</p>
-</footer>
+</div>
 
 <script src="assets/app.js" defer></script>
 </body>
